@@ -1,3 +1,6 @@
+import 'package:fixit_app/core/res/res_export.dart';
+import 'package:fixit_app/core/services/route_names.dart';
+import 'package:fixit_app/src/onboarding/presentation/widgets/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreenThree extends StatelessWidget {
@@ -5,10 +8,11 @@ class OnBoardingScreenThree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [Image.asset("assets/images/onboarding_3.png")],
-      ),
-    );
+    return OnBoardingScreen(
+        imagePath: ImageConstants.onBoardingScreenThree,
+        tagLine: "Your problem , our solution",
+        serviceMessage: "Repair everything by ",
+        routeName: RouteName.homeScreen,
+        stepPercentage: 100);
   }
 }

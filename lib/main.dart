@@ -1,5 +1,4 @@
 import 'package:fixit_app/core/services/services_export.dart';
-import 'package:fixit_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Flutter Demo',
+      title: 'Fixit',
       theme: ThemeData(
         // This is the theme of your application.
         //

@@ -37,6 +37,11 @@ class AppRouter{
           path: RouteName.onBoardingScreenThree,
           builder: (context, state) => const OnBoardingScreenThree(),
         ),
+        GoRoute(
+          name: RouteName.loginScreen,
+          path: RouteName.loginScreen,
+          builder: (context, state) => const LoginScreen()
+        )
 
 
       ]);

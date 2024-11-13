@@ -12,7 +12,7 @@ class OnBoardingScreenThree extends StatelessWidget {
         imagePath: ImageConstants.onBoardingScreenThree,
         tagLine: "Your problem , our solution",
         serviceMessage: "Repair everything by ",
-        routeName: RouteName.homeScreen,
+        routeName: RouteName.loginScreen,
         stepPercentage: 100);
   }
 }

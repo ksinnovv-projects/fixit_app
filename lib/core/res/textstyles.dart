@@ -27,5 +27,19 @@ class AppTextStyles {
   );
    }
 
+   static TextStyle dmSans32Bold (){
+    return GoogleFonts.dmSans(
+    fontWeight: FontWeight.w700,
+    fontSize: 32,
+  );
+   }
+
+    static TextStyle roboto16SemiBold (){
+    return GoogleFonts.roboto(
+    fontWeight: FontWeight.w600,
+    fontSize: 16,
+  );
+   }
+
   
 }

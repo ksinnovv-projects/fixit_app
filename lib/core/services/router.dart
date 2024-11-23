@@ -5,8 +5,9 @@ import 'package:go_router/go_router.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey =
     GlobalKey<NavigatorState>(debugLabel: 'root');
-class AppRouter{
-   AppRouter._();
+
+class AppRouter {
+  AppRouter._();
   // Static instance of AppRouter
   static final AppRouter _instance = AppRouter._();
 
@@ -17,7 +18,7 @@ class AppRouter{
       initialLocation: RouteName.initialRoute,
       navigatorKey: _rootNavigatorKey,
       routes: [
-         GoRoute(
+        GoRoute(
           name: RouteName.initialRoute,
           path: RouteName.initialRoute,
           builder: (context, state) => const SplashScreen(),
@@ -38,11 +39,16 @@ class AppRouter{
           builder: (context, state) => const OnBoardingScreenThree(),
         ),
         GoRoute(
-          name: RouteName.loginScreen,
-          path: RouteName.loginScreen,
-          builder: (context, state) => const LoginScreen()
-        )
-
-
+            name: RouteName.loginScreen,
+            path: RouteName.loginScreen,
+            builder: (context, state) => const LoginScreen()),
+        GoRoute(
+            name: RouteName.otpVerifyScreen,
+            path: RouteName.otpVerifyScreen,
+            builder: (context, state) => OtpVerifyScreen()),
+        GoRoute(
+            name: RouteName.homeScreen,
+            path: RouteName.homeScreen,
+            builder: (context, state) => HomeScreen()),
       ]);
 }

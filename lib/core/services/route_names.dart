@@ -5,6 +5,7 @@ class RouteName{
   static String onBoardingScreenTwo = "/onBoardingScreenTwo";
   static String onBoardingScreenThree = "/onBoardingScreenThree";
   static String loginScreen = "/login";
+  static String otpVerifyScreen = "/otp-verify";
   static String signupScreen = "/signup";
   static String homeScreen = "/home";
   static String notificationsScreen = "/notifications";

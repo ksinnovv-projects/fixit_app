@@ -4,4 +4,5 @@ class ImageConstants {
   static String onBoardingScreenThree = "assets/images/onboarding_3.png";
   static String forwardArrow = "assets/images/forward_arrow.png";
   static String loginNumberInput = "assets/images/login_number_input.png";
+  static String otpVerifyImage = "assets/images/otp_input.png";
 }
